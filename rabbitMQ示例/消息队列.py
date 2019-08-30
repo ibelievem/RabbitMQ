@@ -50,10 +50,10 @@
 
 # 4. 使用
 """
-    生产者消费者
+    a.生产者 消费者
         n VS 1 
         n VS m
-    发布订阅
+    b.发布订阅
         fanout,和exchange关联的所有队列都会接收到信息.
         direct,关键字精确匹配exchange关联的队列都会接收到信息.
         topic,关键字模糊匹配exchange关联的队列都会接收到信息.
