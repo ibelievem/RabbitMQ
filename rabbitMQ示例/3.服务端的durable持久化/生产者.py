@@ -16,7 +16,7 @@ channel=connection.channel()
 
 # 通过管道声明一个队列，支持持久化
 # RabbitMQ不允许您使用不同的参数重新定义现有队列，因此需要重新声明不同名称的队列
-# 1、步骤一
+# 1、异步任务、步骤一
 channel.queue_declare(queue='xws1',durable=True)
 
 

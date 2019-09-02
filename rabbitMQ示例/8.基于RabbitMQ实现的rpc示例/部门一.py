@@ -26,7 +26,7 @@ class FibonacciRpcClient(object):
         self.response = None
         self.corr_id = str(uuid.uuid4())
 
-        # 任务一 给 任务二 发送一个任务: 1、 任务id = corr_id ，2、 任务内容 = '30' ，3、 用于接收结果的队列名称
+        # 任务一 给 任务二 发送一个任务: 1、异步任务、 任务id = corr_id ，2、 任务内容 = '30' ，3、 用于接收结果的队列名称
         self.channel.basic_publish(exchange='',
                                    routing_key='rpc_queue', # 任务二接收任务的队列名称
                                    properties=pika.BasicProperties(
